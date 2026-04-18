@@ -32,11 +32,14 @@ def emotion_detector(text_to_analyze):
 
     # Watson NLP API endpoint
     url = "https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict"
+    
+    # Watson NLP API headers - required for proper API communication
     headers = {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Accept": "application/json"
     }
 
-    # Request payload for Watson NLP
+    # Request payload for Watson NLP - text passed in raw_document
     data = {
         "raw_document": {
             "content": text_to_analyze
@@ -44,7 +47,7 @@ def emotion_detector(text_to_analyze):
     }
 
     try:
-        # Make the API call to Watson NLP
+        # Make the POST request to Watson NLP API
         response = requests.post(url, json=data, headers=headers, timeout=10)
 
         # If successful response from Watson

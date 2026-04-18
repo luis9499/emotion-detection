@@ -1,4 +1,6 @@
-# Emotion Detection - Final Project
+# Final Project
+
+## Emotion Detection Application
 
 A comprehensive AI-powered web application that detects emotions in text using Watson NLP and Flask.
 
@@ -11,7 +13,7 @@ This project implements an emotion detection system that analyzes text and ident
 - **API Endpoint**: RESTful API for emotion detection
 - **Error Handling**: Comprehensive error handling for invalid inputs
 - **Unit Tests**: Complete test suite with 11 test cases
-- **Code Quality**: Static code analysis with pylint achieving 10.00/10 score
+- **Code Quality**: Static code analysis with pylint achieving 10/10 score
 
 ## 🎯 Project Tasks
 
